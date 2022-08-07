@@ -1,0 +1,69 @@
+﻿@model Electronics.Models.Product
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head>
+    <style>
+        a {
+    color: #7a7a7a;
+    text-decoration: none;
+}
+
+    .btn.btn-danger {
+    color: #fff;
+    background-color: #6b6b6b;
+    border-color: #6b6b6b;}
+    </style>
+</head>
+<h4>Delete Product</h4>
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Product Name
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+        <dt class = "col-sm-2">
+          Price
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProductPrice)
+        </dd>
+        <dt class = "col-sm-2">
+          Quntity
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProductQuntity)
+        </dd>
+        <dt class = "col-sm-2">
+            Available
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IsAvailable)
+        </dd>
+        <dt class = "col-sm-2">
+            Image
+        </dt>
+        <dd class = "col-sm-10">
+          <img src=@Url.Content("~/Image/" + Model.ImagePath) asp-append-version="true" width="50" height="50" />
+
+        </dd>
+     @*   <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Category.CategoryId)
+        </dd class>*@
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ProductId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

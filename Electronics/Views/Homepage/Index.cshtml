@@ -1,0 +1,538 @@
+﻿@model dynamic
+
+@{
+	//ViewBag.Title = "Index";
+	
+    //ViewData["Title"] = ViewBag.Website.WebImagelogoPath
+	 //dynamic firstBook = Model.ToList().FirstOrDefault();
+	Layout=null;
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	
+  <link href="~/css/profilecus.css" rel="stylesheet" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="~/assest3/images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/assest3/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/assest3/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/assest3/fonts/themify/themify-icons.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/assest3/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/assest3/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/assest3/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/assest3/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/assest3/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/assest3/vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/assest3/vendor/lightbox2/css/lightbox.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/assest3/css/util.css">
+	<link rel="stylesheet" type="text/css" href="~/assest3/css/main.css">
+<!--===============================================================================================-->
+	
+  <link rel="stylesheet" type="text/css" href="~/catAndPro/css/bootstrap.css" />
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="~/catAndPro/css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="~/catAndPro/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="~/catAndPro/css/responsive.css" rel="stylesheet" />
+
+
+<style>
+	.wrap-menu-header {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-top: 5px solid #000000;
+}
+.bo-rad-10 {
+    border-radius: 10px;
+    margin-top: 46px;
+}
+.btn-secondaryy {
+    color: #fff;
+    background-color: #111111;
+    border-color: #111111;
+}
+button,a {
+    color: #ffffff;
+
+}
+.food_section .box .img-box img {
+    max-width: 100%;
+    max-height: 145px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    border-radius: 11px;
+}
+.food_section .box .img-box {
+    background: #222831;}
+</style>
+
+</head>
+<body id="Homee" class="animsition">
+
+	<!-- Header -->
+	<header>
+		<!-- Header desktop -->
+		<div class="wrap-menu-header gradient1 trans-0-4">
+			<div class="container h-full">
+				<div class="wrap_header trans-0-3">
+					<!-- Logo -->
+					<div class="logo">
+<a href="/Homepage/Index">
+<img src="~/Image/@Model.WebImagelogoPath" alt="Icon" />
+</a>
+</div>
+					<!-- Menu -->
+					<div  class="wrap_menu p-l-45 p-l-0-xl">
+						<nav class="menu">
+							<ul class="main_menu">
+								<li>
+									<a href="/Homepage/Index">Home</a>
+								</li>
+
+								
+								<li>
+									<a href="#about">About</a>
+								</li>
+
+								<li>
+									<a href="/LoginAndRegister/Login">Login</a>
+								</li>
+
+							</ul>
+						</nav>
+					</div>
+
+
+
+					<!-- Social -->
+					<div class="social flex-w flex-l-m p-r-20">
+						<a href="/Carts/Index"><i class="fas fa-shopping-cart"></i></a>
+						<a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
+
+						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Sidebar -->
+	<aside class="sidebar trans-0-4">
+
+		<button class="btn-hide-sidebar ti-close color0-hov trans-0-4"></button>
+
+	  
+		@if (Model.userEmail != null && Model.userImage != null)
+		{
+		<div class="containerrr">
+		  <div class="row" style="padding-top: 68px;">
+			<div class="col-md-6 img">
+			  <img src="@Url.Content("~/Image/"+Model.userImage)" width="100" height="100" style="border-radius: 50px; " alt="profile" class="img-rounded">
+			</div>
+			<div class="col-md-6 details">
+			  <blockquote style="color: #959595">
+				<h5 style="font-family: 'Montserrat' ;">@Model.userEmail</h5>
+			  </blockquote>
+			  <button type="button" class="btn btn-secondaryy" style="color:#ffffff ;"><a  asp-action="EditCusProfile" asp-route-id="@ViewBag.userId">Edit</a></button>
+			</div>
+		  </div>
+		</div>
+		}
+		<!-- - -->
+		<ul class="menu-sidebar p-t-95 p-b-70" >
+
+			<li>
+
+			</li>
+
+
+			<li class="t-center m-b-13">
+				<a href="/Homepage/Index" class="txt19">Home</a>
+			</li>
+
+		
+			<li class="t-center m-b-13">
+				<a  href="/Homepage/About" class="txt19">About</a>
+			</li>
+
+			<li class="t-center m-b-33">
+				<a href="/Homepage/Contact" class="txt19">Contact Us</a>
+			</li>
+
+
+			<li class="t-center">
+				<!-- Button3 -->
+				<a href="/LoginAndRegister/Login" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+					Logout
+				</a>
+			</li>
+		</ul>
+	</aside>
+
+
+
+
+
+
+
+	<!-- Slide1 -->
+	<section class="section-slide">
+		<div class="wrap-slick1">
+			<div class="slick1">
+				<div class="item-slick1 item1-slick1" style="background-image: url(/assest3/slider/dmitry-mashkin-wlKZih5iIGE-unsplash.jpg);">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
+							Welcome to
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
+							@Model.websiteName
+
+						</h2>
+
+					
+					</div>
+				</div>
+
+				<div class="item-slick1 item2-slick1" style="background-image: url(/assest3/slider/theo-sautif-HgHyKjlvjJs-unsplash.jpg);">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rollIn">
+							Welcome to
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
+							@Model.websiteName
+						</h2>
+
+					
+					</div>
+				</div>
+
+				<div class="item-slick1 item3-slick1" style="background-image: url(/assest3/slider/s1.png);">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
+							Welcome to
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
+							@Model.websiteName
+						</h2>
+
+					</div>
+				</div>
+
+			</div>
+
+			<div class="wrap-slick1-dots"></div>
+		</div>
+	</section>
+
+	<!-- Welcome -->
+	<section class="section-welcome bg1-pattern p-t-120 p-b-105">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 p-t-45 p-b-30">
+					<div class="wrap-text-welcome t-center">
+						<span class="tit2 t-center">
+							Apple Watch
+						</span>
+
+						<h3 class="tit3 t-center m-b-35 m-t-5">
+							 Series 7
+						</h3>
+
+						<p class="t-center m-b-22 size3 m-l-r-auto">
+							الساعة الحلم. لا يتتبع تطبيق النوم أنماط نومك فحسب، بل يساعدك على تحديد موعد أو روتين لوقت النوم كي تحقق أهداف نومك، كما أنه يتتبع أيضاً معدل تنفسك أثناء نومك، لتنعم بنوم هانئ.
+						</p>
+
+						<a href="https://www.apple.com/jo-ar/apple-watch-series-7/" class="txt4">
+							Our Story
+							<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+
+				<div style="margin-top: 40px"; class="col-md-6 p-b-30">
+					<div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
+						<img  src="https://media.hitekno.com/thumbs/2018/09/13/13521-apple-watch-series-4/730x480-img-13521-apple-watch-series-4.jpg" alt="IMG-OUR">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Intro -->
+	
+
+	<!-- Our menu                            **************************************************************************************-->
+
+<section id="Product" class="section-ourmenu bg2-pattern p-t-115 p-b-120">
+<div class="container">
+<div class="title-section-ourmenu t-center m-b-22">
+<span class="tit2 t-center">
+Discover
+</span> <h3 class="tit5 t-center m-t-2">
+Our Categorys
+</h3>
+</div> <section class="food_section layout_padding-bottom">
+<div class="container"> <ul class="filters_menu">
+<li class="active" data-filter="all">All</li>
+@foreach (var item in Model.Category)
+{
+<li data-filter=".@item.CategoryName">@item.CategoryName</li> } </ul> <div class="filters-content">
+<div class="row grid">
+@foreach (var item in Model.Product)
+{
+@foreach (var item1 in Model.Category)
+{
+@if (item.CategoryId == item1.CategoryId)
+{
+<div class="col-sm-6 col-lg-4 @item1.CategoryName">
+<div class="box">
+<div>
+<div class="img-box">
+<img src="~/Image/@item.ImagePath" alt="">
+</div>
+<div class="detail-box">
+<h5>
+@item.ProductName
+</h5>
+<div class="options">
+<h6>
+@item.ProductPrice $
+</h6>
+
+@using (Html.BeginForm("Index", "Homepage", new { ProductId = item.ProductId , ProductPrice = item.ProductPrice }, FormMethod.Post))
+{
+<button type="submit" class="btn btn-primary">
+<i class="fas fa-shopping-cart"> </i>
+</button>
+}
+</div>
+</div>
+</div>
+</div>
+</div>
+}
+}
+} </div>
+</div> </div>
+</section> </div>
+</section>
+
+
+  	<!--End Our menu                            **************************************************************************************-->
+
+<!-- Our Story -->
+<section id="about" class="section-welcome bg1-pattern p-t-120 p-b-105">
+<div class="container">
+<div class="row">
+<div class="col-md-6 p-t-45 p-b-30">
+<div class="wrap-text-welcome t-center">
+<span class="tit2 t-center">
+@Model.websiteName
+</span>
+<h3 class="tit3 t-center m-b-35 m-t-5">
+About Us
+</h3>
+<p class="t-center m-b-22 size3 m-l-r-auto">
+@Model.Info
+</p>
+</div>
+</div>
+<div class="col-md-6 p-b-30">
+<div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
+<img src="~/image/@Model.AboutImage" alt="IMG-OUR">
+</div>
+</div>
+</div>
+</div>
+</section>
+@*/////////<!-- Footer -->/////////////////////////////////////////////////////////////////////////////////////////////////////////////*@
+
+
+
+
+	
+    <footer id="footer" class="bg1">
+		<div class="container p-t-40 p-b-70">
+			<div class="row">
+				<div id="contactus" class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-33">
+						Contact Us
+					</h4>
+
+					<ul class="m-b-70">
+						<li class="txt14 m-b-14">
+							<i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
+							@Model.Address
+						</li>
+
+						<li class="txt14 m-b-14">
+							<i class="fa fa-phone fs-16 dis-inline-block size19" aria-hidden="true"></i>
+                           @Model.Phone  
+						</li>
+
+						<li class="txt14 m-b-14">
+							<i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
+							@Model.Email
+						</li>
+					</ul>
+
+					
+				</div>
+
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<!-- - -->
+					<h4 class="txt13 m-b-32">
+						Opening Times
+					</h4>
+
+					<ul>
+						<li class="txt14">
+							24/7
+						</li>
+
+						<li class="txt14">
+							Every Day 
+						</li>
+					</ul>
+				</div>
+
+				
+			</div>
+		</div>
+
+		<div class="end-footer bg2">
+			<div class="container">
+				<div class="flex-sb-m flex-w p-t-22 p-b-22">
+					<div class="p-t-5 p-b-5">
+						<a href="#" class="fs-15 c-white"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+						<a href="#" class="fs-15 c-white"><i class="fa fa-facebook m-l-18" aria-hidden="true"></i></a>
+						<a href="#" class="fs-15 c-white"><i class="fa fa-twitter m-l-18" aria-hidden="true"></i></a>
+					</div>
+
+					<div class="txt17 p-r-20 p-t-5 p-b-5">
+						Copyright &copy; 2022 Welcome in E-lectronics <i class="fa fa-heart"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top bg0-hov" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+	<!-- Container Selection1 -->
+	<div id="dropDownSelect1"></div>
+
+	<!-- Modal Video 01-->
+	<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
+
+		<div class="modal-dialog" role="document" data-dismiss="modal">
+			<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
+
+			<div class="wrap-video-mo-01">
+				<div class="w-full wrap-pic-w op-0-0"><img src="~/assest3/images/icons/video-16-9.jpg" alt="IMG"></div>
+				<div class="video-mo-01">
+					<iframe src="https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<!--===============================================================================================-->
+	<script type="text/javascript" src="~/assest3/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="~/assest3/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="~/assest3/vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="~/assest3/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="~/assest3/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="~/assest3/vendor/daterangepicker/moment.min.js"></script>
+	<script type="text/javascript" src="~/assest3/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="~/assest3/vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="~/assest3/js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="~/assest3/vendor/parallax100/parallax100.js"></script>
+	<script type="text/javascript">
+        $('.parallax100').parallax100();
+	</script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="~/assest3/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="~/assest3/vendor/lightbox2/js/lightbox.min.js"></script>
+<!--===============================================================================================-->
+	<script src="~/assest3/js/main.js"></script>
+
+     <!-- jQery -->
+  <script src="~/catAndPro/js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="~/catAndPro/js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="~/catAndPro/js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+  <script>
+
+  </script>
+	
+</body>
+</html>
+

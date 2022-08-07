@@ -1,0 +1,16 @@
+﻿.containerrr {
+    padding: 5%;
+}
+
+    .containerrr .img {
+        text-align: center;
+    }
+
+    .containerrr .details {
+        border-left: 3px solid #ded4da;
+    }
+
+        .containerrr .details p {
+            font-size: 15px;
+            font-weight: bold;
+        }

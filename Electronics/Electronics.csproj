@@ -1,0 +1,135 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\catAndPro\.git\ms-persist.xml" />
+    <Content Include="wwwroot\catAndPro\.vs\ProjectSettings.json" />
+    <Content Include="wwwroot\catAndPro\.vs\VSWorkspaceState.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\asesst2\.sass-cache\21880c0ffe15753a53f8402e9f64e1077e071510\style.scssc" />
+    <None Include="wwwroot\asesst2\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\extend.scssc" />
+    <None Include="wwwroot\asesst2\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\fonts.scssc" />
+    <None Include="wwwroot\asesst2\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\global.scssc" />
+    <None Include="wwwroot\asesst2\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\minxi.scssc" />
+    <None Include="wwwroot\asesst2\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\variables.scssc" />
+    <None Include="wwwroot\asesst2\.sass-cache\3948936f84e1a30385e73a9be140b58b48c82e15\style.scssc" />
+    <None Include="wwwroot\asesst2\.sass-cache\643489b018602f15119d8f44aeb7fc79468873a9\main.scssc" />
+    <None Include="wwwroot\asesst2\.sass-cache\643489b018602f15119d8f44aeb7fc79468873a9\responsive.scssc" />
+    <None Include="wwwroot\asesst2\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\extend.scssc" />
+    <None Include="wwwroot\asesst2\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\fonts.scssc" />
+    <None Include="wwwroot\asesst2\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\global.scssc" />
+    <None Include="wwwroot\asesst2\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\minxi.scssc" />
+    <None Include="wwwroot\asesst2\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\variables.scssc" />
+    <None Include="wwwroot\asesst2\.sass-cache\9dc767a56f3dc2f8a933300255cd2265f13191d4\main.scssc" />
+    <None Include="wwwroot\asesst2\.sass-cache\9dc767a56f3dc2f8a933300255cd2265f13191d4\responsive.scssc" />
+    <None Include="wwwroot\catAndPro\.git\COMMIT_EDITMSG" />
+    <None Include="wwwroot\catAndPro\.git\config" />
+    <None Include="wwwroot\catAndPro\.git\description" />
+    <None Include="wwwroot\catAndPro\.git\FETCH_HEAD" />
+    <None Include="wwwroot\catAndPro\.git\HEAD" />
+    <None Include="wwwroot\catAndPro\.git\hooks\applypatch-msg.sample" />
+    <None Include="wwwroot\catAndPro\.git\hooks\commit-msg.sample" />
+    <None Include="wwwroot\catAndPro\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="wwwroot\catAndPro\.git\hooks\post-update.sample" />
+    <None Include="wwwroot\catAndPro\.git\hooks\pre-applypatch.sample" />
+    <None Include="wwwroot\catAndPro\.git\hooks\pre-commit.sample" />
+    <None Include="wwwroot\catAndPro\.git\hooks\pre-merge-commit.sample" />
+    <None Include="wwwroot\catAndPro\.git\hooks\pre-push.sample" />
+    <None Include="wwwroot\catAndPro\.git\hooks\pre-rebase.sample" />
+    <None Include="wwwroot\catAndPro\.git\hooks\pre-receive.sample" />
+    <None Include="wwwroot\catAndPro\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="wwwroot\catAndPro\.git\hooks\push-to-checkout.sample" />
+    <None Include="wwwroot\catAndPro\.git\hooks\update.sample" />
+    <None Include="wwwroot\catAndPro\.git\index" />
+    <None Include="wwwroot\catAndPro\.git\info\exclude" />
+    <None Include="wwwroot\catAndPro\.git\logs\HEAD" />
+    <None Include="wwwroot\catAndPro\.git\logs\refs\heads\main" />
+    <None Include="wwwroot\catAndPro\.git\logs\refs\remotes\origin\main" />
+    <None Include="wwwroot\catAndPro\.git\objects\07\c00cd227da09d9e398ec89ae48e5d3c218010d" />
+    <None Include="wwwroot\catAndPro\.git\objects\0d\1b3c62220558a66f83bfdf64aae913bd3ae8d2" />
+    <None Include="wwwroot\catAndPro\.git\objects\10\b4fb892fd56bd9608adc6afae349b740a95486" />
+    <None Include="wwwroot\catAndPro\.git\objects\18\06e407df00fba5a004306710521c7372b6483e" />
+    <None Include="wwwroot\catAndPro\.git\objects\18\6f713c98aed450356db23b110abad331716124" />
+    <None Include="wwwroot\catAndPro\.git\objects\1e\aaa62ce8a5f74737658c4819fd6a91b6c789e1" />
+    <None Include="wwwroot\catAndPro\.git\objects\2e\14756c762365418ea4af819f2d2cb808ae3126" />
+    <None Include="wwwroot\catAndPro\.git\objects\2f\36be06c2b872101b40904e21e52582b8546cd3" />
+    <None Include="wwwroot\catAndPro\.git\objects\2f\87072015934968fac961f1c0989a1edae2742c" />
+    <None Include="wwwroot\catAndPro\.git\objects\30\52660f3759c80aca51357765960b9e6167495f" />
+    <None Include="wwwroot\catAndPro\.git\objects\31\bbb02351fb63131b06ca13425c293589c6df58" />
+    <None Include="wwwroot\catAndPro\.git\objects\32\5f21b8bfeb406f2a872125ed52e98d503ae899" />
+    <None Include="wwwroot\catAndPro\.git\objects\34\1e9d3bcd5007ae1ac349b7f21a73a811c49749" />
+    <None Include="wwwroot\catAndPro\.git\objects\35\acda2fa1196aad98c2adf4378a7611dd713aa3" />
+    <None Include="wwwroot\catAndPro\.git\objects\39\44b82045269f96fea3e2201c091ff025f06456" />
+    <None Include="wwwroot\catAndPro\.git\objects\40\0014a4b06eee3d0c0d54402a47ab2601b2862b" />
+    <None Include="wwwroot\catAndPro\.git\objects\4a\44e50ea3147e02770eb3b8066502f9405e0f02" />
+    <None Include="wwwroot\catAndPro\.git\objects\4c\05c5eac990732b9e3bd0e44cd8f95381f7a458" />
+    <None Include="wwwroot\catAndPro\.git\objects\4d\13fc60404b91e398a37200c4a77b645cfd9586" />
+    <None Include="wwwroot\catAndPro\.git\objects\54\0440ce89f2a408aa699b65100e18f15e0f09ca" />
+    <None Include="wwwroot\catAndPro\.git\objects\55\a6ef5bb9babb975d744c980984a25eb85adbee" />
+    <None Include="wwwroot\catAndPro\.git\objects\58\3cf3717a7d081a4382110553a2c11e9407fd6a" />
+    <None Include="wwwroot\catAndPro\.git\objects\5b\b1b5b9841f514ddf5529f5a0b23baa4b9b8159" />
+    <None Include="wwwroot\catAndPro\.git\objects\5f\1c0be802dbb2769320628332c82054f02d60c9" />
+    <None Include="wwwroot\catAndPro\.git\objects\6f\9509c88bed7080d496fc5e1d87a9315e30549d" />
+    <None Include="wwwroot\catAndPro\.git\objects\70\d10d41fc7282c30a4088cddba2fd4e56826222" />
+    <None Include="wwwroot\catAndPro\.git\objects\71\45e16408e8babbbb444d616dfb48a086bfb425" />
+    <None Include="wwwroot\catAndPro\.git\objects\71\9ec1ec754f87c12c43bf842b30f2139b9ec00a" />
+    <None Include="wwwroot\catAndPro\.git\objects\8a\9fb56973b1f169185649e6ace001a0af867aa3" />
+    <None Include="wwwroot\catAndPro\.git\objects\8a\e04b4dc1b8979d9dac4687516a26f8b97574e0" />
+    <None Include="wwwroot\catAndPro\.git\objects\8b\5e21606d808a224c2b0370c921d817d9e3b5a3" />
+    <None Include="wwwroot\catAndPro\.git\objects\8b\d23815cfa76fab2917ce5944de83d95be345b1" />
+    <None Include="wwwroot\catAndPro\.git\objects\8f\4758923aa884eb810ebd68c44c6ec6632c3adf" />
+    <None Include="wwwroot\catAndPro\.git\objects\92\12b8ebc712418a20353febdfa44fcd06d763ac" />
+    <None Include="wwwroot\catAndPro\.git\objects\96\de482e0eb5d88a86fe58ad6c84a23bcbb887fb" />
+    <None Include="wwwroot\catAndPro\.git\objects\a9\35ba12c9b76c319a48a3121fa34e8bb8de3753" />
+    <None Include="wwwroot\catAndPro\.git\objects\aa\11db388ab27dba4c30101449f532368a5e8849" />
+    <None Include="wwwroot\catAndPro\.git\objects\b1\c1b2251ebf99b48d271193eb4a6708002f4c50" />
+    <None Include="wwwroot\catAndPro\.git\objects\cc\dbede6194993c77cff845eae9dc4454e6f07e0" />
+    <None Include="wwwroot\catAndPro\.git\objects\cd\cd2034ad54efb4668dbc243a574af7aaa8d260" />
+    <None Include="wwwroot\catAndPro\.git\objects\d3\3f10e3a0f55839807739c45566ebb0af4e493c" />
+    <None Include="wwwroot\catAndPro\.git\objects\d6\09e5320a1c6bc02123f8ae81548f4b82d49777" />
+    <None Include="wwwroot\catAndPro\.git\objects\da\3a3fe2d8a5019dcd3e8c1046880a336021dfb1" />
+    <None Include="wwwroot\catAndPro\.git\objects\df\e0770424b2a19faf507a501ebfc23be8f54e7b" />
+    <None Include="wwwroot\catAndPro\.git\objects\e0\1a3c8f28fc3bb62aa5af86888b5bd8d2924036" />
+    <None Include="wwwroot\catAndPro\.git\objects\fe\90e726c94b24482f1aaf2160fc7c06ad302277" />
+    <None Include="wwwroot\catAndPro\.git\objects\ff\c0db9ddee2fd0c2f9b610994902f0b5d360ef0" />
+    <None Include="wwwroot\catAndPro\.git\refs\heads\main" />
+    <None Include="wwwroot\catAndPro\.git\refs\remotes\origin\main" />
+    <None Include="wwwroot\catAndPro\.vs\slnx.sqlite" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.21">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="ODP.NetCore" Version="2.0.12" />
+    <PackageReference Include="Oracle.EntityFrameworkCore" Version="5.21.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="wwwroot\catAndPro\.git\objects\info\" />
+    <Folder Include="wwwroot\catAndPro\.git\objects\pack\" />
+    <Folder Include="wwwroot\catAndPro\.git\refs\tags\" />
+    <Folder Include="wwwroot\catAndPro\.vs\feane\v17\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\jsreport\" />
+    <Folder Include="wwwroot\lib\bootstrap\" />
+    <Folder Include="wwwroot\lib\bootstrap\dist\js\" />
+    <Folder Include="wwwroot\lib\jquery-validation-unobtrusive\" />
+    <Folder Include="wwwroot\lib\jquery-validation\" />
+    <Folder Include="wwwroot\lib\jquery-validation\dist\" />
+    <Folder Include="wwwroot\lib\jquery\" />
+    <Folder Include="wwwroot\lib\jquery\dist\" />
+  </ItemGroup>
+
+</Project>
